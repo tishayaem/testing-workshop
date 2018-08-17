@@ -32,6 +32,11 @@ form.addEventListener('submit', e => {
 // If the result is not the sum of those numbers (ie 7),
 // then throw an error!
 
+const result = addInputValues('2', '4')
+
+if (result !== 6) {
+  throw new Error(`Expected result to be 6, but was ${result}`)
+} else console.log("success")
 // Once you've finished your test, check your browser's console
 // and be sure the error is thrown.
 // Congratulations, you've written a test!
